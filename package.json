@@ -1,6 +1,6 @@
 {
   "homepage": "http://mklevin.github.io/react",
-  "name": "mklevin.github.io-react",
+  "name": "react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
