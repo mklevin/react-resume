@@ -1,6 +1,6 @@
 {
-  "homepage": "http://mklevin.github.io/react",
-  "name": "react",
+  "homepage": "http://mklevin.github.io/ghp-react",
+  "name": "ghp-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
