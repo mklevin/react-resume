@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.Resume {
+  display: flex;
+  min-width: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Resume main {
+  flex-basis: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Resume spacer {
+  flex-grow: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Resume header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Resume h1 {
+  color: navy;
+  font-size: 3em;
+  margin-block-start: 0.75em;
+  margin-block-end: 0.2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Resume h2 {
+  color: navy;
+  font-size: 1.5em;
+  border-bottom: 1px solid #000;
+  line-height: 2em;
+}
+
+.Resume header .links ul {
+  padding-inline-start: 0;
+  text-align: center;
+}
+
+.Resume header .links li {
+  display: inline;
+  margin: 0.3em;
+}
+
+.Resume .experience ul {
+  padding-inline-start: 0;
+}
+
+.Resume .experience li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.Resume .experience li:last-child {
+  margin-bottom: 0p;
+}
+
+.Resume .experience li .summary {
+  display: flex;
+}
+
+.Resume .experience li .info {
+  flex: 1;
+}
+
+.Resume .experience li .context {
+  flex: 1;
+}
+
+.Resume .experience h3 {
+  font-size: 1.1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.Resume .experience h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-style: italic;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.Resume .experience li .when {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.Resume .experience li .where {
+  font-style: italic;
+  text-align: right;
 }

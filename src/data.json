@@ -1,0 +1,169 @@
+{
+    "info": {
+        "name": "Matt Levin",
+        "resumeUrl": "https://google.com",
+        "links": [
+            {
+                "name": "email",
+                "url": "mailto:mattklevin@gmail.com"
+            },
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/mklevin"
+            },
+            {
+                "name": "github",
+                "url": "https://mklevin.github.io"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "title": "Languages",
+            "items": [
+                "Java", 
+                "Scala", 
+                "Python", 
+                "SQL", 
+                "JavaScript/TypeScript", 
+                "HTML/CSS", 
+                "C#", 
+                "C", 
+                "C++", 
+                "PHP"
+            ]
+        },
+        {
+            "title": "Frameworks & Libraries",
+            "items": [
+                "Scio (Apache Beam)", 
+                "Luigi", 
+                "Guava", 
+                "GraphQL", 
+                "MySQL",
+                "PostgreSQL",
+                "Android", 
+                "React", 
+                "Angular",
+                "jQuery",
+                "Bootstrap"]
+        }, {
+            "title": "Tools & Platforms",
+            "items": [
+                {
+                    "title": "Google Cloud",
+                    "items": [
+                        "AppEngine",
+                        "BigQuery", 
+                        "BigTable", 
+                        "Cloud SQL", 
+                        "Cloud Storage", 
+                        "Compute Engine", 
+                        "Dataflow", 
+                        "Kubernetes", 
+                        "Memcache", 
+                        "Spanner",
+                        "Stackdriver"
+                    ]
+                },
+                "Git",
+                "Subversion",
+                "Unix/Linux",
+                "Adobe Photoshop"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institute": "University of Delaware, Honors Program",
+            "graduationDate": "May 2015",
+            "degree": "Bachelor of Science, Computer Science",
+            "subDegree": "Minor in Astronomy",
+            "majorGpa": "3.55/4.0",
+            "overallGpa": "3.7/4.0",
+            "coursework": [
+                "Advanced Software Engineering", 
+                "Advanced Web Technologies", 
+                "Artificial Intelligence", 
+                "Compiler Design", 
+                "Computational Linguistics", 
+                "Computer Graphics", 
+                "Computer Networks", 
+                "Database Systems", 
+                "Parallel Programming", 
+                "System Hardening & Protection"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "Spotify",
+            "jobTitle": "Senior Software Engineer",
+            "location": "New York, NY",
+            "startDate": "January 2019",
+            "endDate": "Present",
+            "bullets": [
+                "did a thing",
+                "did some other thing",
+                "even did a third thing, wowee"
+            ]
+        },
+        {
+            "company": "Google",
+            "jobTitle": "Software Engineer",
+            "location": "Sunnyvale, CA | New York, NY",
+            "startDate": "August 2015",
+            "endDate": "January 2019",
+            "bullets": [
+                "Designed and implemented a Java and Python-based data pipeline to make analytics from third-party contract analysis tools for over 100K contracts available to stakeholders across Google.",
+                "Researched and implemented new performance and UX-focused features in Android and Angular frontends and a Google Cloud-based backend for a cross-platform issue-tracking app, resulting in a 250% increase in daily active users.",
+                "Managed a team of two contractors to implement new features for and support users of third-party document management software.",
+                "Led efforts to simultaneously improve test coverage and reduce test maintenance time by building an automated test data generation framework.",
+                "Provided Java mentorship and over 1,000 code reviews to engineers across the company."
+            ]
+        },
+        {
+            "company": "JPMorgan Chase & Co.",
+            "jobTitle": "Application Developer",
+            "location": "Newark, DE",
+            "startDate": "June",
+            "endDate": "August 2014",
+            "bullets": [
+                "Created a user interface for triggering and monitoring automation using a vendor toolkit and C#.",
+                "Communicated and persisted data between front and back ends using Sybase ASE databases.",
+                "Used Agile Scrum methodology to conduct eight one-week sprints to meet the needs of product owners while giving weekly sprint demonstrations."
+            ]
+        },
+        {
+            "company": "University of Delaware, Office of Academic Enrichment",
+            "jobTitle": "Undergraduate Tutor",
+            "location": "Newark, DE",
+            "startDate": "February",
+            "endDate": "December 2013",
+            "bullets": [
+                "Tutored individuals and groups of students in both computer science and mathematics."
+            ]
+        },
+        {
+            "company": "Agilent Technologies",
+            "jobTitle": "Software Engineering Intern",
+            "location": "Wilmington, DE",
+            "startDate": "May",
+            "endDate": "August 2013",
+            "bullets": [
+                "Implemented a PHP-driven system for delivering, validating, and installing firmware updates to Linux-based machines.",
+                "Built a Sencha Touch Javascript tablet application for managing and selecting update packages."
+            ]
+        },
+        {
+            "company": "Techlabs, Inc.",
+            "jobTitle": "Webmaster",
+            "location": "Huntingdon Valley, PA",
+            "startDate": "June 2010",
+            "endDate": "August 2012",
+            "bullets": [
+                "Added new features using both freely distributed plugins and Javascript."
+            ]
+        }
+    ]
+}
