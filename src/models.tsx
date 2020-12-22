@@ -7,12 +7,12 @@ export interface SocialLink {
 
 export interface ResumeInfo {
     name: string;
-    resumeUrl: string;
+    email: string,
     links: SocialLink[];
 }
 
 export interface Skill {
-    title: string;
+    name: string;
     items: Array<string|Skill>;
 }
 

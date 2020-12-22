@@ -14,16 +14,18 @@ const ExperienceSection = ({ experiences }: ExperienceProps) => {
                     <h4>{experience.jobTitle}</h4>
                 </div>
                 <div className="context">
-                    <div class="when">
+                    <div className="when">
                         {experience.startDate} &mdash; {experience.endDate}
                     </div>
-                    <div class="where">
+                    <div className="where">
                         {experience.location}
                     </div>
                 </div>
             </div>
             <ul className="details">
-                
+                {experience.bullets.map((bullet) => {
+                    return <li key={bullet}>{bullet}</li>;
+                })}
             </ul>
         </li>
     );
@@ -31,7 +33,7 @@ const ExperienceSection = ({ experiences }: ExperienceProps) => {
     return (
         <div className="experience">
             <h2>Experience</h2>
-            <ul>
+            <ul className="experienceList">
                 {renderedExperiences}
             </ul>
         </div>

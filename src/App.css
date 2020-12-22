@@ -1,92 +1,185 @@
-.Resume {
+.App {
   display: flex;
-  min-width: 600px;
+  min-width: 400px;
+  margin-bottom: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* customize me! */
 }
 
-.Resume main {
+.Resume {
   flex-basis: 90%;
 }
 
-.Resume spacer {
+.spacer {
   flex-grow: 1;
 }
 
-.Resume header {
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
 }
 
-.Resume h1 {
-  color: navy;
+.experience {
+  flex: 8;
+  min-width: 60%;
+  margin-right: 2em;
+}
+
+.sidebar {
+  flex: 4;
+  min-width: 340px;
+}
+
+h1 {
+  color: #03506f; /* customize me! */
   font-size: 3em;
+  font-weight: normal;
   margin-block-start: 0.75em;
-  margin-block-end: 0.2em;
+  margin-block-end: 0.1em;
 }
 
-.Resume h2 {
-  color: navy;
+h2 {
+  color: #03506f; /* customize me! */
   font-size: 1.5em;
+  font-weight: normal;
   border-bottom: 1px solid #000;
-  line-height: 2em;
+  line-height: 1.4em;
+  margin-block-end: 0.4em;
 }
 
-.Resume header .links ul {
-  padding-inline-start: 0;
-  text-align: center;
-}
 
-.Resume header .links li {
-  display: inline;
-  margin: 0.3em;
-}
-
-.Resume .experience ul {
-  padding-inline-start: 0;
-}
-
-.Resume .experience li {
-  list-style: none;
-  margin-bottom: 1em;
-}
-
-.Resume .experience li:last-child {
-  margin-bottom: 0p;
-}
-
-.Resume .experience li .summary {
-  display: flex;
-}
-
-.Resume .experience li .info {
-  flex: 1;
-}
-
-.Resume .experience li .context {
-  flex: 1;
-}
-
-.Resume .experience h3 {
+h3 {
   font-size: 1.1em;
+  line-height: 1.1em;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
-.Resume .experience h4 {
+h4 {
   font-size: 1.1em;
   font-weight: normal;
   font-style: italic;
   margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-end: 0.1em;
 }
 
-.Resume .experience li .when {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .name {
+  flex: 6;
+}
+
+header .links {
+  flex: 5;
+  text-align: right;
+}
+
+header .links {
+  margin-top: 2.4em;
+}
+
+.experience ul.experienceList, 
+.education ul.educationList {
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+.experience li.experienceItem, 
+.education li.educationItem {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.experience li.experienceItem:last-child, 
+.education li.educationItem:last-child {
+  margin-bottom: 0p;
+}
+
+.experience li.experienceItem .summary,
+.education li.educationItem .summary {
+  display: flex;
+  margin-bottom: 0.15em;
+}
+
+.experience li.experienceItem .info,
+.education li.educationItem .info {
+  flex: 1;
+}
+
+.experience li.experienceItem .context
+.education li.educationItem .context {
+  flex: 1;
+}
+
+.experience li.experienceItem .when,
+.education li.educationItem .when {
   font-size: 1.1em;
   font-weight: bold;
   text-align: right;
 }
 
-.Resume .experience li .where {
+.experience li.experienceItem .where {
   font-style: italic;
   text-align: right;
+}
+
+.experience ul.details {
+  list-style: none;
+}
+
+.experience .details li:before {
+  content: "•";
+  color: #03506f; /* customize me! */
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.skillsList .category {
+  margin-bottom: 0.5em;
+}
+
+.educationList .gpa {
+  text-align: right;
+}
+
+.educationList .coursework {
+  margin-block-start: 0.5em;
+}
+
+.educationList .title {
+  font-weight: bold;
+  line-height: 1em;
+}
+
+@media print {
+  .App {
+    font-size: 8.9pt;
+    margin-bottom: 0;
+  }
+
+  .Resume {
+    flex-basis: 100%;
+  }
+
+  main {
+    display: block;
+  }
+
+  .spacer {
+    flex: 0;
+  }
+
+  .experience {
+    flex: 8;
+    margin-right: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
