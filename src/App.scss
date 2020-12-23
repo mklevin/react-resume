@@ -136,7 +136,6 @@ header .email {
 
 .experience li.experienceItem .where {
   font-style: italic;
-  font-size: 1em;
   text-align: right;
 }
 
@@ -162,13 +161,11 @@ header .email {
 }
 
 .educationList .gpa {
-  font-size: 1em;
   text-align: right;
 }
 
 .educationList .coursework {
   margin-block-start: 0.5em;
-  font-size: 1em;
 }
 
 @media print {
