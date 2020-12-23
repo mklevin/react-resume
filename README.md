@@ -15,6 +15,10 @@ This template sets up a basic resume website on top of [GitHub Pages](https://pa
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Example
+
+You can check out an example site at https://mklevin.github.io/react-resume/.
+
 ## Getting started
 
 Getting your own resume site set up is quick and easy:
