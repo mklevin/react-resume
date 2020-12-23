@@ -94,6 +94,10 @@ header .email {
   padding-inline-start: 0;
 }
 
+.experience ul.experienceList {
+  margin-block-end: 0;
+}
+
 .experience li.experienceItem, 
 .education li.educationItem {
   list-style: none;
@@ -102,7 +106,7 @@ header .email {
 
 .experience li.experienceItem:last-child, 
 .education li.educationItem:last-child {
-  margin-bottom: 0p;
+  margin-bottom: 0;
 }
 
 .experience li.experienceItem .summary,
@@ -180,11 +184,7 @@ header .email {
   main {
     display: block;
   }
-
-  .spacer {
-    flex: 0;
-  }
-
+  
   .experience {
     flex: 8;
   }
@@ -197,17 +197,18 @@ header .email {
 
 @media only screen and (max-width: 450px),
        only screen and (max-height: 450px) {
-  .App {
-    font-size: 10pt;
-  }
 
   .Resume {
     margin: 0 5% 0;
   }
 
-  .sidebar {
-    /* actual number isn't important, just forces single column */
-    min-width: 75%;
+  main {
+    flex-direction: column;
+  }
+
+  main, .experience, .sidebar {
+    margin-right: 0;
+    min-width: 0;
   }
 
   h3, 
@@ -232,7 +233,6 @@ header .email {
   }
 
   header .links {
-    max-width: 85%;
     text-align: center;
     margin-top: 0;
   }

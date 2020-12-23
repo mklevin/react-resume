@@ -8,19 +8,16 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <div className="spacer" />
       <div className="Resume">
         <Header resumeInfo={ResumeData.info} />
         <main>
           <ExperienceSection experiences={ResumeData.experience} />
           <div className="sidebar">
             <SkillsSection skills={ResumeData.skills} />
-            <div className="spacer" />
             <EducationSection education={ResumeData.education} />
           </div>
         </main>
       </div>
-      <div className="spacer" />
     </div>
   );
 }
