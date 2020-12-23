@@ -33,7 +33,7 @@ in order for GitHub Pages to work.
 4. Run `npm run deploy` to deploy the site! 
     * Note that it'll deploy using a separate `gh-pages` branch in your repo
 
-## Customizing
+## Customization
 
 * The app supports light color theming. You can set your own color choices 
 by editing the constants at the top of `src/App.scss`
