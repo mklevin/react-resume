@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Example
 
-You can check out an example site at https://mattklevin.io/react-resume/.
+You can check out an example site at https://mattlevin.io/react-resume/.
 
 ## Getting started
 
