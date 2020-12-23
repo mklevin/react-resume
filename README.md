@@ -25,8 +25,8 @@ Getting your own resume site set up is quick and easy:
 
 1. Clone/fork this repo. You'll need your new repo to have a name matching the `<your_github_username>.github.io` format 
 in order for GitHub Pages to work.
-2. Edit `package.json`, updating the following fields:
-    * `homepage` should match your GitHub Pages URL (usually `https://<your_github_username>.github.io`)
+2. Update the following fields in `package.json`:
+    * `homepage` should match your GitHub Pages URL (`https://<your_github_username>.github.io` by default)
     * `name`, typically the name of your repo
 3. Replace `Your Name` with your name in the `<title>` braces in `public/index.html` 
 3. Update `src/data.json` with your resume
@@ -35,14 +35,14 @@ in order for GitHub Pages to work.
 
 ## Customizing
 
-* The app supports light color theming. You can do set your own color choices 
-by editing the Sass constants at the top of `src/App.scss`
+* The app supports light color theming. You can set your own color choices 
+by editing the constants at the top of `src/App.scss`
 
 * In general, if a resume field seems optional, it likely is
     * And if it's not, open a pull request making it optional!
 
 * All list properties are uncapped. If you have 15 different jobs you want to list, 
-the only thing stopping you is you, and reasonable page lengths
+the only thing stopping you is you (and reasonable page lengths)
     * Skills specifically support nested items, in case you want to get specific about your qualifications
 
 ## Available scripts
