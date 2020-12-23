@@ -1,162 +1,139 @@
 {
     "info": {
-        "name": "Matt Levin",
-        "email": "mattklevin@gmail.com",
+        "name": "Your Name",
+        "email": "yourname@email.com",
         "links": [
             {
                 "name": "LinkedIn",
-                "url": "https://www.linkedin.com/in/mklevin"
+                "url": "https://www.linkedin.com/in/yourname"
             },
             {
-                "name": "GitHub",
-                "url": "https://mklevin.github.io"
+                "name": "Instagram",
+                "url": "https://instagram.com/yourname"
+            },
+            {
+                "name": "Neopets",
+                "url": "https://neopets.com/yourname"
             },
             {
                 "name": "Download"
             },
             {
                 "name": "Fork this resume!",
-                "url": "https://github.com/mklevin/ghp-react"
+                "url": "https://github.com/mklevin/react-resume"
             }
         ]
     },
+    "experience": [
+        {
+            "company": "Company with the Jobs",
+            "jobTitle": "Job Haver",
+            "location": "Jobtown, NY",
+            "startDate": "January 2019",
+            "endDate": "Present",
+            "bullets": [
+                "Carried out the responsibilities of someone who has a job, resulting in an over 100% increase in people with jobs.",
+                "Monitored job opportunities to ensure the continued job-havingness of all job-havers.",
+                "Managed tasks for self and team by doomscrolling on Twitter instead of actually doing work."
+            ]
+        },
+        {
+            "company": "Employer Inc.",
+            "jobTitle": "Chief Employee",
+            "location": "Employville, CA",
+            "startDate": "August 2015",
+            "endDate": "December 2018",
+            "bullets": [
+                "Led a team of X employees in carrying out various employee tasks, including working, toiling, and laboring.",
+                "Completed tasks related to being an employee, including checking email, drowning in email, and declaring email bankruptcy."
+            ]
+        },
+        {
+            "company": "Entry Level Employer",
+            "jobTitle": "Overqualified Hire",
+            "location": "Workenberg, WV",
+            "startDate": "June",
+            "endDate": "August 2014",
+            "bullets": [
+                "Acquired five years of experience despite this field having only existed for half that time.",
+                "Design and implemented a new method of appearing to work while watching cat videos, resulting in a 500% decrease in productivity."
+            ]
+        },
+        {
+            "company": "University of College",
+            "jobTitle": "Undergraduate Employee",
+            "location": "Collegeplace, IO",
+            "startDate": "February",
+            "endDate": "December 2013",
+            "bullets": [
+                "Completed likely pretty complicated work for almost definitely a third of the pay a full-time employee would receive."
+            ]
+        },
+        {
+            "company": "The Neighbor Down the Street",
+            "jobTitle": "\"Landscaper\"",
+            "location": "Hometown, FL",
+            "startDate": "May",
+            "endDate": "August 2013",
+            "bullets": [
+                "Mowed lawns, trimmed hedges, and otherwise kept the property looking pristine.",
+                "Received half-minimum wage for what is typically three people worth of work."
+            ]
+        }
+    ],
     "skills": [
         {
             "name": "Languages",
             "items": [
                 "Java", 
                 "Scala", 
-                "Python", 
-                "SQL", 
                 "JavaScript/TypeScript", 
-                "HTML/CSS", 
-                "C#", 
-                "C", 
-                "C++", 
-                "PHP"
+                "French",
+                "German",
+                "Pig Latin",
+                "Klingon"
             ]
         },
         {
             "name": "Frameworks & Libraries",
             "items": [
-                "Scio (Apache Beam)", 
-                "Luigi", 
-                "Guava", 
-                "GraphQL", 
                 "MySQL",
                 "PostgreSQL",
-                "Android", 
                 "React", 
-                "Angular",
-                "jQuery",
-                "Bootstrap"]
+                "Android",
+                "Your Local Public Library"]
         }, {
-            "name": "Tools & Platforms",
+            "name": "Hobbies",
             "items": [
                 {
-                    "name": "Google Cloud",
+                    "name": "Musical performance",
                     "items": [
-                        "AppEngine",
-                        "BigQuery", 
-                        "BigTable", 
-                        "Cloud SQL", 
-                        "Cloud Storage", 
-                        "Compute Engine", 
-                        "Dataflow", 
-                        "Kubernetes", 
-                        "Spanner"
+                        "piano",
+                        "cello",
+                        "didgeridoo",
+                        "seven-piece choir"
                     ]
                 },
-                "Git",
-                "Subversion",
-                "Unix/Linux",
-                "Adobe Photoshop"
+                "reading",
+                "farming",
+                "investment banking"
             ]
         }
     ],
     "education": [
         {
-            "institute": "University of Delaware",
+            "institute": "University of College",
             "graduationDate": "May 2015",
-            "degree": "Honors B.S., Computer Science",
-            "subDegree": "Minor in Astronomy",
-            "majorGpa": "3.55/4.0",
-            "overallGpa": "3.7/4.0",
+            "degree": "B.A., Art History",
+            "subDegree": "Minor in Gastronomy",
+            "majorGpa": "4.0",
+            "overallGpa": "3.2",
             "coursework": [
-                "Advanced Software Engineering", 
-                "Advanced Web Technologies", 
-                "Artificial Intelligence", 
-                "Compiler Design", 
-                "Computational Linguistics", 
-                "Computer Graphics", 
-                "Computer Networks", 
-                "Database Systems", 
-                "Parallel Programming", 
-                "System Hardening & Protection"
-            ]
-        }
-    ],
-    "experience": [
-        {
-            "company": "Spotify",
-            "jobTitle": "Senior Software Engineer, Tech Lead",
-            "location": "New York, NY",
-            "startDate": "January 2019",
-            "endDate": "Present",
-            "bullets": [
-                "Led a team of 4 engineers in the design and implementation of a cross-channel (email & in-app) notification targeting and delivery platform for Spotify for Artists, which now serves millions of notifications daily.",
-                "Led a team of 3 engineers in the design and implementation of the backend systems and and data pipelines powering Spotify Wrapped for Artists 2020.",
-                "Collaborated in the design and led the backend implementation of the Home screen for the Spotify for Artists mobile app.",
-                "Led a team of 4 engineers in the design and implementation of a customer support team admin tool for Spotify for Artists.",
-                "Designed and implemented a system for automatically generating unique shareable social media assets for Spotify for Artists users.",
-                "Managed relationships with team stakeholders, groomed and prioritized the team's backlog, and helped plan the team's future roadmap including advocating for prioritization of technical improvements."
-            ]
-        },
-        {
-            "company": "Google",
-            "jobTitle": "Software Engineer",
-            "location": "Sunnyvale, CA | New York, NY",
-            "startDate": "August 2015",
-            "endDate": "January 2019",
-            "bullets": [
-                "Designed and implemented a Java and Python-based data pipeline to make analytics from third-party contract analysis tools for over 100K contracts available to stakeholders across Google.",
-                "Researched and implemented new performance and UX-focused features in Android and Angular frontends and a Google Cloud-based backend for a cross-platform issue-tracking app, resulting in a 250% increase in daily active users.",
-                "Managed a team of two contractors to implement new features for and support users of third-party document management software.",
-                "Led efforts to simultaneously improve test coverage and reduce test maintenance time by building an automated test data generation framework.",
-                "Provided Java mentorship and over 1,000 code reviews to engineers across the company."
-            ]
-        },
-        {
-            "company": "JPMorgan Chase & Co.",
-            "jobTitle": "Application Developer Intern",
-            "location": "Newark, DE",
-            "startDate": "June",
-            "endDate": "August 2014",
-            "bullets": [
-                "Created a user interface for triggering and monitoring automation using a vendor toolkit and C#.",
-                "Communicated and persisted data between front and back ends using Sybase ASE databases.",
-                "Used Agile Scrum methodology to conduct eight one-week sprints to meet the needs of product owners while giving weekly sprint demonstrations."
-            ]
-        },
-        {
-            "company": "University of Delaware",
-            "jobTitle": "Undergraduate Tutor",
-            "location": "Newark, DE",
-            "startDate": "February",
-            "endDate": "December 2013",
-            "bullets": [
-                "Tutored individuals and groups of students in both computer science and mathematics."
-            ]
-        },
-        {
-            "company": "Agilent Technologies",
-            "jobTitle": "Software Engineering Intern",
-            "location": "Wilmington, DE",
-            "startDate": "May",
-            "endDate": "August 2013",
-            "bullets": [
-                "Implemented a PHP-driven system for delivering, validating, and installing firmware updates to Linux-based machines.",
-                "Built a Sencha Touch Javascript tablet application for managing and selecting update packages."
+                "History of Art", 
+                "History of Paint", 
+                "History of Painted Art", 
+                "The Stomach and Art", 
+                "Paintings of Food"
             ]
         }
     ]

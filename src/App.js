@@ -3,7 +3,7 @@ import ExperienceSection from './components/experience';
 import Header from './components/header';
 import SkillsSection from './components/skills';
 import ResumeData from './data.json';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

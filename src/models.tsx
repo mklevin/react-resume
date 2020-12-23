@@ -21,8 +21,8 @@ export interface Education {
     graduationDate: string;
     degree: string;
     subDegree?: string;
-    majorGpa: string;
-    overallGpa: string;
+    majorGpa?: string;
+    overallGpa?: string;
     coursework: string[];
 }
 

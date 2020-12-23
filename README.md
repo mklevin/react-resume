@@ -1,12 +1,49 @@
-A revamp of my GitHub Pages site using React.
+# React Resume for GitHub Pages
 
-# Getting Started with Create React App
+Ever thought about making your own resume website? Turned off by unnecessarily complicated templates? Enjoy bragging about how your site is
+built with fancy technologies like React despite probably not needing to be? Then boy do I have good news for you!
+
+This template sets up a basic resume website on top of [GitHub Pages](https://pages.github.com/) with a number of handy features:
+
+* Responsive design
+    * Multi-column on wider browsers
+    * One column on smaller browsers and mobile devices
+* Extensible
+* Tastefully colorable
+* Printable - finally time to throw away that Google Doc resume!
+* Screen-reader friendly
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+Getting your own resume site set up is quick and easy:
+
+1. Clone/fork this repo. You'll need your new repo to have a name matching the `<your_github_username>.github.io` format 
+in order for GitHub Pages to work.
+2. Edit `package.json`, updating the following fields:
+    * `homepage` should match your GitHub Pages URL (usually `https://<your_github_username>.github.io`)
+    * `name`, typically the name of your repo
+3. Replace `Your Name` with your name in the `<title>` braces in `public/index.html` 
+3. Update `src/data.json` with your resume
+4. Run `npm run deploy` to deploy the site! 
+    * Note that it'll deploy using a separate `gh-pages` branch in your repo
+
+## Customizing
+
+* The app supports light color theming. You can do set your own color choices 
+by editing the Sass constants at the top of `src/App.scss`
+
+* In general, if a resume field seems optional, it likely is
+    * And if it's not, open a pull request making it optional!
+
+* All list properties are uncapped. If you have 15 different jobs you want to list, 
+the only thing stopping you is you, and reasonable page lengths
+    * Skills specifically support nested items, in case you want to get specific about your qualifications
+
+## Available scripts
+
+In the project directory, you can run (among other commands):
 
 ### `npm start`
 
@@ -15,11 +52,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -31,42 +63,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run deploy`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deploys the app to the `gh-pages` branch in your GitHub repo, creating one 
+if the branch doesn't exist. 

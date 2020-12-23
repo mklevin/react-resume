@@ -18,12 +18,16 @@ const EducationSection = ({ education }: EducationProps) => {
                     <div className="when">
                         {edu.graduationDate}
                     </div>
-                    <div className="gpa">
-                        GPA: {edu.overallGpa}
-                    </div>
-                    <div className="gpa">
-                        Major GPA: {edu.majorGpa}
-                    </div>
+                    {edu.overallGpa && 
+                        <div className="gpa">
+                            GPA: {edu.overallGpa}
+                        </div>
+                    }
+                    {edu.majorGpa && 
+                        <div className="gpa">
+                            Major GPA: {edu.majorGpa}
+                        </div>
+                    }
                 </div>
             </div>
             <div className="coursework">
