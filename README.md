@@ -10,6 +10,7 @@ This template sets up a basic resume website on top of [GitHub Pages](https://pa
     * One column on smaller browsers and mobile devices
 * Extensible
 * Tastefully colorable
+* Native and toggleable dark mode support
 * Printable - finally time to throw away that Google Doc resume!
 * Screen-reader friendly
 
@@ -36,7 +37,7 @@ in order for GitHub Pages to work.
 ## Customization
 
 * The app supports light color theming. You can set your own color choices 
-by editing the constants at the top of `src/App.scss`
+    by editing the CSS variables at the top of `src/App.css`
 
 * In general, if a resume field seems optional, it likely is
     * And if it's not, open a pull request making it optional!
@@ -44,6 +45,11 @@ by editing the constants at the top of `src/App.scss`
 * All list properties are uncapped. If you have 15 different jobs you want to list, 
 the only thing stopping you is you (and reasonable page lengths)
     * Skills specifically support nested items, in case you want to get specific about your qualifications
+
+* Theme switching is enabled by default. Alternatively, you can set `THEME_SWITCHER_MODE` 
+    in `App.tsx` to `LIGHT_ONLY` or `DARK_ONLY` to force a particular theme
+    * This could definitely be exported to a config file, but it didn't seem worth the effort
+        for a single property
 
 ## Available scripts
 

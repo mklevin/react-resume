@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,wght@600,bold,italic&subset=latin,latin-ext');
+
+/* highlight colors */
+:root {
+  --light-highlight-color: navy;
+  --dark-highlight-color: #64B5F6;
+}
+
+/* default color palette */
+html {
+  --bkg-color: white;
+  --text-color: black;
+  --highlight-color: var(--light-highlight-color);
+  --underline-color: var(--text-color);
+  --link-color: #0000EE; /* default web link color, nothing special */
+
+  --bold-font-size: 1.05rem;
+  --bold-font-weight: 600;
+}
+
+/* dark theme color palette */
+html[data-theme='dark'] {
+  --bkg-color: #121212;
+  --text-color:  rgba(255, 255, 255, 0.87);
+  --highlight-color: var(--dark-highlight-color);
+  --underline-color: var(--highlight-color);
+  --link-color: var(--highlight-color);
+}
+
+body {
+  background-color: var(--bkg-color);
+  color: var(--text-color);
+  font-family: 'Source Sans Pro', 'Calibri', 'Cambria', sans-serif; /* customize me! */
+}
+
+a, a:hover, a:visited {
+  color: var(--link-color);
+}
+
+:focus {
+  /* make sure outlines are visible in all theme modes */
+  outline-color: var(--text-color);
+}
+
+.App {  
+  min-width: 350px;
+  margin-bottom: 2em;
+}
+
+.Resume {
+  margin: 0 2.9em 0;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap; 
+  margin-right: -2em;
+}
+
+.experience {
+  flex: 8;
+  min-width: 56%;
+  margin-right: 2em;
+}
+
+.sidebar {
+  flex: 4;
+  min-width: 350px;
+  margin-right: 2em;
+}
+
+h1 {
+  color: var(--highlight-color);
+  font-size: 3rem;
+  font-weight: normal;
+  margin-block-start: 0.75em;
+  margin-block-end: 0.1em;
+}
+
+h2 {
+  color: var(--highlight-color);
+  font-size: 1.4rem;
+  font-weight: normal;
+  border-bottom: 1px solid var(--underline-color);
+  line-height: 1.4em;
+  margin-block-end: 0.4em;
+}
+
+
+h3 {
+  font-size: var(--bold-font-size);
+  line-height: 1.1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h4 {
+  font-size: var(--bold-font-size);
+  font-weight: normal;
+  font-style: italic;
+  margin-block-start: 0;
+  margin-block-end: 0.1em;
+}
+
+.theme-switcher {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -50px;
+  right: 0;
+  border-style: solid;
+  border-width: 0 55px 55px 0;
+  border-color: transparent var(--highlight-color) transparent transparent;
+  color: var(--bkg-color);
+}
+
+/* enable theme switcher button outline for appropriate user agents only (e.g. keyboard) */
+.theme-switcher:focus {
+  outline: none;
+}
+
+.theme-switcher:focus-visible {
+  outline: 2px solid var(--text-color);
+}
+
+.theme-switcher .theme-switcher-text {
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  top: 55px;
+  right: -77px;
+}
+
+.theme-switcher .material-icons {
+  font-size: 1.4em;
+}
+
+.experience ul.experience-list, 
+.education ul.education-list {
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .name {
+  flex: 6;
+}
+
+header .links {
+  flex: 5;
+  text-align: right;
+  margin-top: 2.4em;
+}
+
+header .email {
+  margin-bottom: 2px;
+}
+
+
+.experience ul.experience-list {
+  margin-block-end: 0;
+}
+
+.experience li.experience-item, 
+.education li.education-item {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.experience li.experience-item:last-child, 
+.education li.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience li.experience-item .summary,
+.education li.education-item .summary {
+  display: flex;
+}
+
+.experience li.experience-item .info,
+.education li.education-item .info {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.experience li.experience-item .context
+.education li.education-item .context {
+  flex: 1;
+}
+
+.experience li.experience-item .when,
+.education li.education-item .when {
+  font-size: var(--bold-font-size);
+  font-weight: var(--bold-font-weight);
+  line-height: 1.1em;
+  text-align: right;
+}
+
+.experience li.experience-item .where {
+  font-style: italic;
+  text-align: right;
+}
+
+.experience ul.details {
+  list-style: none;
+}
+
+.experience .details li {
+  margin-left: -1em;
+}
+
+.experience .details li:before {
+  display: inline-block; 
+  content: "•";
+  width: 1em;
+  margin-left: -1em;
+  color: var(--highlight-color);
+}
+
+.skills-list .category {
+  margin-bottom: 0.7em;
+}
+
+.education-list .title {
+  font-weight: var(--bold-font-weight);
+  line-height: 1em;
+}
+
+.education-list .gpa {
+  text-align: right;
+}
+
+.education-list .coursework {
+  margin-block-start: 0.5em;
+}
+
+/* mobile-only adjustments */
+@media only screen and (max-width: 450px),
+       only screen and (max-height: 450px) {
+  .Resume {
+    margin: 0 5% 0;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main, .experience, .sidebar {
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  h3, 
+  .experience li.experience-item .when,
+  .education li.education-item .when,
+  .education-list .title {
+    font-weight: var(--bold-font-weight);
+  }
+
+  .experience .details li {
+    margin-left: -1em;
+  }
+}
+
+/* mobile portrait orientation adjustments */
+@media only screen and (max-width: 450px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .links {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+/* overrides for printing */
+@media print {
+  /* force a printer-friendly version of light mode */
+  html {
+    font-size: 11.2px;
+    --bkg-color: white !important;
+    --text-color: black !important;
+    --highlight-color: var(--light-highlight-color) !important;
+    --link-color: black !important;
+  }
+
+  .App {
+    margin: -0.5em 0 0;
+  }
+
+  .Resume {
+    flex-basis: 100%;
+  }
+
+  main {
+    display: block;
+  }
+
+  .theme-switcher {
+    display: none;
+  }
+  
+  .experience {
+    flex: 8;
+  }
+
+  main, .experience, .sidebar {
+    margin: 0;
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}

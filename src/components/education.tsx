@@ -7,7 +7,7 @@ interface EducationProps {
 
 const EducationSection = ({ education }: EducationProps) => {
     const renderedEducation = education.map((edu: Education) =>
-        <li className="educationItem" key={edu.institute}>
+        <li className="education-item" key={edu.institute}>
             <div className="summary">
                 <div className="info">
                     <h3>{edu.institute}</h3>
@@ -39,7 +39,7 @@ const EducationSection = ({ education }: EducationProps) => {
     return (
         <div className="education">
             <h2>Education</h2>
-            <ul className="educationList">
+            <ul className="education-list">
                 {renderedEducation}
             </ul>
         </div>

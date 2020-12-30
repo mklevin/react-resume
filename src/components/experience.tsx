@@ -7,7 +7,7 @@ interface ExperienceProps {
 
 const ExperienceSection = ({ experiences }: ExperienceProps) => {
     const renderedExperiences = experiences.map((experience: Experience) =>
-        <li className="experienceItem" key={experience.company}>
+        <li className="experience-item" key={experience.company}>
             <div className="summary">
                 <div className="info">
                     <h3>{experience.company}</h3>
@@ -33,7 +33,7 @@ const ExperienceSection = ({ experiences }: ExperienceProps) => {
     return (
         <div className="experience">
             <h2>Experience</h2>
-            <ul className="experienceList">
+            <ul className="experience-list">
                 {renderedExperiences}
             </ul>
         </div>

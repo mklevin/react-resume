@@ -1,8 +1,6 @@
-import React from 'react';
-
 export interface SocialLink {
     name: string;
-    url: string;
+    url?: string;
 }
 
 export interface ResumeInfo {
@@ -21,8 +19,8 @@ export interface Education {
     graduationDate: string;
     degree: string;
     subDegree?: string;
-    majorGpa?: string;
-    overallGpa?: string;
+    majorGpa: string;
+    overallGpa: string;
     coursework: string[];
 }
 

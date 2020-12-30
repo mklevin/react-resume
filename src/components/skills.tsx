@@ -26,7 +26,7 @@ function renderSkill(skill: Skill | string) {
 const SkillsSection = ({ skills }: SkillProps) => {
     const renderedSkills = skills.map((skill: Skill) =>
         <div className="category" key={skill.name}>
-            <div className="categoryName">
+            <div className="category-name">
                 <h3>
                     {skill.name}
                 </h3>
@@ -40,7 +40,7 @@ const SkillsSection = ({ skills }: SkillProps) => {
     return (
         <div className="skills">
             <h2>Skills</h2>
-            <div className="skillsList">
+            <div className="skills-list">
                 {renderedSkills}
             </div>
         </div>
